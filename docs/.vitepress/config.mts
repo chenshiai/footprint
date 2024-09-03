@@ -5,23 +5,25 @@ export default defineConfig({
   title: "ChenShiAi Docs",
   description: "this is ChenShiAi's Docs",
   base: '/footprint/',
+  head: [['link', { rel: 'icon', href: '/footprint/logo.ico' }]],
 
   themeConfig: {
+    logo: '/logo.ico',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Examples', link: '/examples/markdown-examples' }
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown Examples', link: '/examples/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/examples/api-examples' }
         ],
         collapsed: false
-      }
+      },
     ],
 
     socialLinks: [
