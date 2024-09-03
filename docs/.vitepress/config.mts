@@ -28,7 +28,7 @@ export default defineConfig({
 
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: {
-      text: 'Updated at',
+      text: '最后更新于',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
