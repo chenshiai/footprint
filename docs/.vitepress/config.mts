@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitepress'
+import setSidebar from './setSidebar.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "ChenShiAi Docs",
-  description: "this is ChenShiAi's Docs",
+  title: "ChenShiAiの行迹",
+  description: "this is ChenShiAi's Footprint",
   base: '/footprint/',
   head: [['link', { rel: 'icon', href: '/footprint/logo.ico' }]],
 
@@ -11,20 +12,11 @@ export default defineConfig({
     logo: '/logo.ico',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/examples/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '参考', link: '/examples/markdown-examples' }
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/examples/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/examples/api-examples' }
-        ],
-        collapsed: false
-      },
-    ],
+    sidebar: [setSidebar('examples')],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
@@ -73,24 +65,4 @@ export default defineConfig({
     sidebarMenuLabel: '目录',
     externalLinkIcon: true,
   },
-
-  // transformHead({ assets }) {
-  //   // 相应地调整正则表达式以匹配字体
-  //   const font1 = assets.find(file => /HYWenHei-85W\.\w+\.ttf/)
-  //   const font2 = assets.find(file => /_-webfont\.\w+\.woff2/)
-  //   if (font1) {
-  //     return [
-  //       [
-  //         'link',
-  //         {
-  //           rel: 'preload',
-  //           href: font1,
-  //           as: 'font',
-  //           type: 'font/ttf',
-  //           crossorigin: ''
-  //         },
-  //       ],
-  //     ]
-  //   }
-  // }
 })

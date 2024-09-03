@@ -3,15 +3,18 @@
 layout: home
 
 hero:
-  name: "Project 1332"
-  text: "A VitePress Site"
-  tagline: 汉仪文黑85W
+  name: ChenShiAiの行迹
+  text: 知识、生活、娱乐
+  tagline: 九层之台，起于垒土；千里之行，始于足下。
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /examples/markdown-examples
+      text: 知识殿堂
+      link: /examples/api-examples
     - theme: alt
-      text: API Examples
+      text: 生活感悟
+      link: /examples/api-examples
+    - theme: alt
+      text: 快乐小屋
       link: /examples/api-examples
 
 features:
@@ -19,6 +22,7 @@ features:
       src: /logo.ico
     title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elitD
+    link: baidu.com
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
@@ -26,7 +30,6 @@ features:
   - title: Feature D
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
 ## Getting Started
 
 You can get started using VitePress right away using `npx`!
