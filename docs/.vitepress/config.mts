@@ -72,5 +72,25 @@ export default defineConfig({
     returnToTopLabel: '返回顶部',
     sidebarMenuLabel: '目录',
     externalLinkIcon: true,
-  }
+  },
+
+  // transformHead({ assets }) {
+  //   // 相应地调整正则表达式以匹配字体
+  //   const font1 = assets.find(file => /HYWenHei-85W\.\w+\.ttf/)
+  //   const font2 = assets.find(file => /_-webfont\.\w+\.woff2/)
+  //   if (font1) {
+  //     return [
+  //       [
+  //         'link',
+  //         {
+  //           rel: 'preload',
+  //           href: font1,
+  //           as: 'font',
+  //           type: 'font/ttf',
+  //           crossorigin: ''
+  //         },
+  //       ],
+  //     ]
+  //   }
+  // }
 })

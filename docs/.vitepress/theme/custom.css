@@ -1,7 +1,17 @@
-/* .vitepress/theme/custom.css */
+@font-face {
+  font-family: 'eng';
+  src: url('assets/_-webfont.woff2');
+}
+
+@font-face {
+  font-family: 'zhn';
+  src: url('assets/HYWenHei-85W.ttf');
+}
 :root {
   --vp-c-brand-1: #646cff;
   --vp-c-brand-2: #747bff;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  /* normal text font */
+  --vp-font-family-base: 'eng', 'zhn';
 }
