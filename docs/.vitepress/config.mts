@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ChenShiAi Docs",
   description: "this is ChenShiAi's Docs",
+  base: '/footprint/',
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
