@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 知识殿堂
-      link: /examples/api-examples
+      link: /front-end/javascript/js
     - theme: alt
       text: 生活感悟
       link: /examples/api-examples

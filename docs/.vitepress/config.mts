@@ -1,39 +1,82 @@
 import { defineConfig } from 'vitepress'
-import setSidebar from './setSidebar.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "ChenShiAiの行迹",
+  title: 'ChenShiAiの行迹',
   description: "this is ChenShiAi's Footprint",
   base: '/footprint/',
   head: [['link', { rel: 'icon', href: '/footprint/logo.ico' }]],
 
   themeConfig: {
     logo: '/logo.ico',
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '参考', link: '/examples/markdown-examples' }
+      { text: '参考', link: 'https://vitepress.dev/zh/' },
     ],
 
-    sidebar: [setSidebar('examples')],
+    sidebar: {
+      '/front-end': [
+        {
+          text: '前端开发',
+          link: '/front-end',
+        },
+        {
+          text: 'JavaScript',
+          collapsed: false,
+          items: [
+            {
+              text: '你好，世界',
+              link: '/front-end/javascript/js',
+            },
+          ],
+        },
+        {
+          text: 'CSS',
+          collapsed: false,
+          items: [
+            {
+              text: '叠层样式表',
+              link: '/front-end/css/css',
+            },
+          ],
+        },
+        {
+          text: 'HTML',
+          collapsed: false,
+          items: [
+            {
+              text: 'html',
+              link: '/front-end/html/html',
+            },
+          ],
+        },
+        {
+          text: 'Web RTC',
+          collapsed: false,
+          items: [
+            {
+              text: 'api',
+              link: '/front-end/webrtc/webRTC',
+            },
+          ],
+        },
+      ],
+    },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/chenshiai' }],
 
     docFooter: { prev: '上一篇', next: '下一篇' },
     lastUpdated: {
-      text: '最后更新于',
+      text: '最后一次更新时间',
       formatOptions: {
         dateStyle: 'full',
-        timeStyle: 'medium'
-      }
+        timeStyle: 'medium',
+      },
     },
     // 页脚
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present ChenShiAi'
+      copyright: 'Copyright © 2024-present ChenShiAi',
     },
 
     // 编辑文章的链接
@@ -44,7 +87,7 @@ export default defineConfig({
 
     // 本地搜索
     search: {
-      provider: 'local'
+      provider: 'local',
     },
 
     // 右下角的广告
