@@ -8,21 +8,19 @@ hero:
   tagline: 九层之台，起于垒土；千里之行，始于足下。
   actions:
     - theme: brand
-      text: 知识殿堂
-      link: /front-end/javascript/js
+      text: 智识
+      link: /articles/front-end/javascript/js
     - theme: alt
-      text: 生活感悟
-      link: /examples/api-examples
+      text: 丰饶
+      link: /articles/examples/api-examples
     - theme: alt
-      text: 快乐小屋
-      link: /examples/api-examples
+      text: 欢愉
+      link: /articles/examples/api-examples
 
 features:
-  - icon:
-      src: /logo.ico
-    title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elitD
-    link: baidu.com
+  - title: VitePress
+    details: 一些VitePress的使用心得
+    link: /articles/vitepress/
   - title: Feature B
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
