@@ -3,9 +3,9 @@ import { FolderName } from '../articles-config'
 
 export default createPath(`/${FolderName}/vitepress`, [
   ['VitePress', [
-    ['开始', '/']
+    ['使用心得', '/']
   ]],
   ['侧边栏', [
-    ['多侧边栏配置方法', '/multiple-sidebars']
+    ['多侧边栏配置方法', '/multiple-sidebars/']
   ], { collapsed: false }]
 ])

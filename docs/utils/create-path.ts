@@ -11,7 +11,7 @@ interface SidebarItem {
 interface SidebarMulti {
   [path: string]: SidebarItem[] | { items: SidebarItem[]; base: string }
 }
-type NodeType = [string, string | NodeType[], SidebarItem?]
+type NodeType = [string, (string | NodeType[] | undefined)?, SidebarItem?]
 
 
 function CSI(node: NodeType, base?: string): SidebarItem {
