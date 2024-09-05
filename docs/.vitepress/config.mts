@@ -5,8 +5,8 @@ import sidebar from './sidebar'
 export default defineConfig({
   title: 'ChenShiAiの行迹',
   description: "this is ChenShiAi's Footprint",
-  base: '/',
-  head: [['link', { rel: 'icon', href: '/logo.ico' }]],
+  base: '/footprint/',
+  head: [['link', { rel: 'icon', href: '/footprint/logo.ico' }]],
 
   themeConfig: {
     logo: '/logo.ico',
