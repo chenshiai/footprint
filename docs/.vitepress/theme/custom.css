@@ -1,17 +1,7 @@
-@font-face {
-  font-family: 'eng';
-  src: url('/_-webfont.woff2');
-}
-
-@font-face {
-  font-family: 'zhn';
-  src: url('/HYWenHei-85W.ttf');
-}
+/* https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css */
 :root {
-  --vp-c-brand-1: #646cff;
-  --vp-c-brand-2: #747bff;
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #646cff, #a4a9ff);
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #212bf0, #fc5fc7);
   /* normal text font */
-  --vp-font-family-base: 'eng', 'zhn';
+  --vp-font-family-base: 'eng', HYWenHei-85W, Avenir, Helvetica, Arial, sans-serif;
 }
