@@ -14,4 +14,7 @@ export default createPath(`/${FolderName}/front-end`, [
   ['HTML', [
     ['超文本标记语言', '/html/html']
   ], { collapsed: true }],
+  ['浏览器', [
+    ['跨域相关', '/browser/cross-domain']
+  ], { collapsed: true }]
 ])
