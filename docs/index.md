@@ -12,7 +12,7 @@ hero:
       link: /articles/front-end/javascript/js
     - theme: alt
       text: 丰饶
-      link: /articles/examples/api-examples
+      link: /life/notes/
     - theme: alt
       text: 欢愉
       link: /articles/examples/api-examples
@@ -21,18 +21,11 @@ features:
   - title: VitePress
     details: 一些VitePress的使用心得
     link: /articles/vitepress/
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Git
+    details: 与Git的相爱相杀
+    link: /articles/git/
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature D
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-## Getting Started
-
-You can get started using VitePress right away using `npx`!
-
-```sh
-npm init
-npx vitepress init
-```

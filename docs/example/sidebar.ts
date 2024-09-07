@@ -2,7 +2,7 @@ import { createPath } from '../utils/create-path'
 
 export default createPath('/example', [
   ['example 根目录', [
-    ['example1']
+    ['example1', '/example1']
   ]],
   ['level1', [
     ['example2', '/level1/example2'],

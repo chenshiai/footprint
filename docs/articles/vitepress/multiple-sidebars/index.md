@@ -157,3 +157,14 @@ function CSI(node: NodeType, base?: string): SidebarItem {
 最后在页面上的效果如图所示：  
 ![alt text](image-1.png)
 [点击这里查看演示目录](../../../example/example1.md)
+
+## 实际使用中可能会出现的错误
+实际表现为：左侧侧边栏没有正确显示`active`的状态，没有高亮当前的文章标题。
+
+请检查跟路径的设置，因为在[CSI](#csi方法)方法中，basePath变量在递归中被用作了base属性，所以basePath的命名应该为`/xxx`而不是官方文档里写的`/xxx/`。
+
+如果控制台有如下报错：
+```
+Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec.
+```
+请检查文章路径设置，如果文章的命名使用的是`index.md`，根据官方文档的说明`index.md`是可以省略的，也就是`/{文件夹名}/`，注意不要写成`/{文件夹名}`了

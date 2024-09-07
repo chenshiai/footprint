@@ -1,5 +1,5 @@
 import { createPath } from '../../utils/create-path'
-import { FolderName } from '../articles-config'
+import { FolderName } from '..'
 
 export default createPath(`/${FolderName}/examples`, [
   ['API 示例', [
