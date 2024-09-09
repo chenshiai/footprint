@@ -1,7 +1,7 @@
-import { createPath } from '../../utils/create-path'
-import { FolderName } from '..'
+import { createPath, getFolderNames } from '../../utils/create-path'
 
-export default createPath(`/${FolderName}/front-end`, [
+// @ts-ignore
+export default createPath(getFolderNames(__dirname, -2), [
   ['前端开发', [
     ['攻城狮', '/']
   ]],

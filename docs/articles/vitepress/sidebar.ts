@@ -1,7 +1,7 @@
-import { createPath } from '../../utils/create-path'
-import { FolderName } from '..'
+import { createPath, getFolderNames } from '../../utils/create-path'
 
-export default createPath(`/${FolderName}/vitepress`, [
+// @ts-ignore
+export default createPath(getFolderNames(__dirname, -2), [
   ['VitePress', [
     ['使用心得', '/']
   ]],

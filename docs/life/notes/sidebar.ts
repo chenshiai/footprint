@@ -1,8 +1,8 @@
-import { createPath } from '../../utils/create-path'
-import { FolderName } from '..'
+import { createPath, getFolderNames } from '../../utils/create-path'
 
-export default createPath(`/${FolderName}/notes`, [
-  ['日常随记', '/'],
+// @ts-ignore
+export default createPath(getFolderNames(__dirname, -2), [
+  ['记录', '/'],
   ['2024年', [
     ['9月7日', '/2024/0907/']
   ]]

@@ -1,7 +1,7 @@
-import { createPath } from '../../utils/create-path'
-import { FolderName } from '..'
+import { createPath, getFolderNames } from '../../utils/create-path'
 
-export default createPath(`/${FolderName}/examples`, [
+// @ts-ignore
+export default createPath(getFolderNames(__dirname, -2), [
   ['API 示例', [
     ['api-examples', '/api-examples']
   ]],

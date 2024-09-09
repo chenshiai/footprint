@@ -1,8 +1,9 @@
-import { createPath } from '../utils/create-path'
+import { createPath, getFolderNames } from '../utils/create-path'
 
-export default createPath('/example', [
+// @ts-ignore
+export default createPath(getFolderNames(__dirname, -1), [
   ['example 根目录', [
-    ['example1', '/example1']
+    ['example', '/example1']
   ]],
   ['level1', [
     ['example2', '/level1/example2'],
