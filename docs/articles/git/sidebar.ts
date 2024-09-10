@@ -1,7 +1,7 @@
-import { createPath, getFolderNames } from '../../utils/create-path'
+import { createPath } from '../../utils/create-path'
 
 // @ts-ignore
-export default createPath(getFolderNames(__dirname, -2), [
+export default createPath('/articles/git', [
   ['GIT', [
     ['开始', '/']
   ]],

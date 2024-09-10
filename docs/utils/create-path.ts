@@ -40,7 +40,3 @@ export function createPath(basePath: string, sidebarTree: NodeType[]): SidebarMu
     [basePath]: sidebarTree.map((node: NodeType) => CSI(node, basePath)),
   }
 }
-
-export function getFolderNames(path: string, num: number): string {
-  return '/' + path.split(/\\/).slice(num).join('/');
-}
